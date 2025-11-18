@@ -14,6 +14,7 @@
 		"dev": "svelte-kit dev --host --https",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview",
+		"start": "npm run preview -- --host 0.0.0.0 --port ${PORT:-3000}",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --ignore-path .gitignore  --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
